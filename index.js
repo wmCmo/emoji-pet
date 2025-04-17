@@ -23,15 +23,15 @@ const sleepOrAwake = () => {
     }
 };
 
-display.src = "/" + sleepOrAwake() + ".svg";
+display.src = "public/" + sleepOrAwake() + ".svg";
 
 let countDown;
 
 const sleepCountDown = () => {
     clearTimeout(countDown);
-    display.src = "/" + "neutral.svg";
+    display.src = "public/" + "neutral.svg";
     countDown = setTimeout(() => {
-        display.src = "/" + sleepOrAwake() + ".svg";
+        display.src = "public/" + sleepOrAwake() + ".svg";
     }, 180000);
 };
 
