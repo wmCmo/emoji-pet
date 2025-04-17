@@ -17,9 +17,9 @@ const randomBoredFace = () => {
 
 const sleepOrAwake = () => {
     if (now > 20 || now < 6) {
-        return randomBoredFace();
-    } else {
         return "sleeping";
+    } else {
+        return randomBoredFace();
     }
 };
 
