@@ -1,0 +1,38 @@
+html,
+body {
+    margin: 0;
+}
+
+.no-drag,
+#display {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#display {
+    width: 10em;
+    height: auto;
+}
+
+.bar {
+    background: linear-gradient(270deg, #fad053, #fd963c);
+    width: 10em;
+    border-radius: 100px;
+    transition-property: width;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.bar-box {
+    width: 10em;
+    border: 2px solid rgb(224, 224, 224);
+    border-radius: 100px;
+    padding: .4em;
+    display: flex;
+}
+
+.bar-group {
+    display: flex;
+    gap: 1em;
+    margin-top: 2em;
+}
